@@ -1,0 +1,17 @@
+Notas de Aula 27/02/20203
+
+- Desenvolvimento utilizando uma linguagem Interpretada
+
+- Desenvolvimento WEB
+	- Front-end (HTML)
+	 - Controller cadastroSvl
+	- Back-end 
+	
+	
+	--FrmCadastro.html			Controller				Contato.java
+		HTML					cadastroSvl					Javanes
+		
+		
+- Request: Requisições (enviando informações no sentido de requisitar/informar algo)
+
+- Response: Retorno / Responsta de um serviço executado no servidor e devolvido ao client
