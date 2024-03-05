@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro de Fornecedores</title>
+<script type="text/javascript">
+	function validar(valor){
+		if(Number(valor) % 6 != 0){
+			alert("Valor inválido");
+		}
+	}
+</script>
+</head>
+<body>
+<!-- Corpo da Página -->
+<fieldset> 
+		<legend>
+			Formul&aacute;rio de Cadastro de Produtos
+		</legend> 
+	 <form method = "post"  action = "svlCadFornecedor"> 
+		  <label>Código</label> <input type="text" name="id"/> 
+		  <label>Descrição</label> <input type="text" 
+		  					name="descricao"/> 
+		  <label>Quantidade</label> <input type="number"
+		  			name="quantidade" onchange="validar(value);"/>	
+		  <button>Cadastrar</button> 
+	  </form> 
+ </fieldset>
+</body>
+</html>
