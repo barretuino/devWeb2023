@@ -1,0 +1,1 @@
+https://www.php.net/manual/pt_BR/indexes.examples.php
