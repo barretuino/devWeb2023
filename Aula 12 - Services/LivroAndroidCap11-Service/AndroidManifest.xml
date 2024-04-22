@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.livro.android.cap11"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ExemploBindService" />
+        <activity android:name="ExemploIniciarServico" />
+        <activity android:name="ExemploIniciarServico_IntentService" />
+
+        <service
+            android:name=".service.ExemploServico_WorkerThread"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="SERVICE_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.ExemploServico_IntentService" />
+        <service android:name=".service.ServicoComConexao" />
+        <activity android:name=".service.aidl.ExemploBindServiceRemoto" />
+        <service android:name=".service.aidl.ServicoComConexaoRemota" />
+    </application>
+
+</manifest>
